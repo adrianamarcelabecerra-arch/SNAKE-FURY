@@ -39,6 +39,7 @@ color:white;
 /* ESPACIO PARA QUE EL JUEGO NO TAPE LOS BOTONES */
 canvas{
 margin-bottom:120px;
+touch-action:none;
 }
 
 /* OCULTAR BOTONES EN COMPUTADOR */
@@ -47,12 +48,12 @@ margin-bottom:120px;
 display:none;
 }
 }
-/* EVITAR ZOOM Y MOVIMIENTO EN MOVIL */
+
+/* EVITAR ZOOM EN MOVIL */
 html, body{
 margin:0;
 padding:0;
 touch-action:manipulation;
-overflow:hidden;
 }
 
 /* EVITAR ZOOM AL TOCAR BOTONES */
