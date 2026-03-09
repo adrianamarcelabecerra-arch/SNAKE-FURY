@@ -34,6 +34,9 @@ border:none;
 border-radius:12px;
 background:#222;
 color:white;
+touch-action:none;
+user-select:none;
+-webkit-user-select:none;
 }
 
 /* ESPACIO PARA QUE EL JUEGO NO TAPE LOS BOTONES */
@@ -49,16 +52,10 @@ display:none;
 }
 }
 
-/* EVITAR ZOOM EN MOVIL */
+/* BLOQUEAR ZOOM Y SCROLL */
 html, body{
 margin:0;
 padding:0;
-touch-action:manipulation;
-}
-
-/* EVITAR ZOOM AL TOCAR BOTONES */
-button{
-touch-action:manipulation;
-user-select:none;
--webkit-user-select:none;
+touch-action:none;
+overscroll-behavior:none;
 }
