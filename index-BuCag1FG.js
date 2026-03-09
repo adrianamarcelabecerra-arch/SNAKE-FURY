@@ -151,6 +151,38 @@ function move(direction){
 
 }
 
+let startX = 0;
+let startY = 0;
+
+document.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+  startY = e.touches[0].clientY;
+});
+
+document.addEventListener("touchend", (e) => {
+
+  let endX = e.changedTouches[0].clientX;
+  let endY = e.changedTouches[0].clientY;
+
+  let dx = endX - startX;
+  let dy = endY - startY;
+
+  if(Math.abs(dx) > Math.abs(dy)){
+    if(dx > 0){
+      move("right");
+    }else{
+      move("left");
+    }
+  }else{
+    if(dy > 0){
+      move("down");
+    }else{
+      move("up");
+    }
+  }
+
+});
+
 document.getElementById("btn-left").addEventListener("touchstart",()=>move("left"));
 document.getElementById("btn-up").addEventListener("touchstart",()=>move("up"));
 document.getElementById("btn-down").addEventListener("touchstart",()=>move("down"));
