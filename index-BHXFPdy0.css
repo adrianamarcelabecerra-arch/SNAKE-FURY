@@ -56,9 +56,6 @@
 }}
 }
 
-/* TODO EL CSS ORIGINAL DE TAILWIND QUE YA TENÍAS */
-/* (no lo modifiqué, solo se mantiene igual) */
-
 @keyframes spin{
 to{transform:rotate(360deg)}
 }
