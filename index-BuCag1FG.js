@@ -135,15 +135,15 @@ window.move = function(direction){
   console.log("Mover:", direction);
 
   if(direction === "up"){
-    window.dispatchEvent(new KeyboardEvent("keydown",{key:"ArrowUp"}));
+    window.dispatchEvent(new KeyboardEvent("keydown",{key:"ArrowUp", bubbles:true}));
   }
   if(direction === "down"){
-    window.dispatchEvent(new KeyboardEvent("keydown",{key:"ArrowDown"}));
+    window.dispatchEvent(new KeyboardEvent("keydown",{key:"ArrowDown", bubbles:true}));
   }
   if(direction === "left"){
-    window.dispatchEvent(new KeyboardEvent("keydown",{key:"ArrowLeft"}));
+    window.dispatchEvent(new KeyboardEvent("keydown",{key:"ArrowLeft", bubbles:true}));
   }
   if(direction === "right"){
-    window.dispatchEvent(new KeyboardEvent("keydown",{key:"ArrowRight"}));
+    window.dispatchEvent(new KeyboardEvent("keydown",{key:"ArrowRight", bubbles:true}));
   }
 }
