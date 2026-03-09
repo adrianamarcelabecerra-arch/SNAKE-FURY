@@ -3,47 +3,49 @@
 body{
 margin:0;
 background:#0a0a0a;
+font-family:Arial, sans-serif;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+/* CONTENEDOR DEL JUEGO */
+.game-container{
 display:flex;
 flex-direction:column;
 align-items:center;
-justify-content:flex-start;
-height:100vh;
-overflow:hidden;
-color:white;
-font-family:Arial, sans-serif;
 }
 
 /* TABLERO */
 canvas{
-width:70vw;
-max-width:280px;
-height:70vw;
-max-height:280px;
+width:300px;
+height:300px;
+max-width:90vw;
 border:3px solid white;
 background:black;
-margin-top:10px;
-margin-bottom:5px;
 }
 
 /* CONTROLES */
 .mobile-controls{
-display:flex;
-justify-content:center;
+margin-top:10px;
 }
 
-/* GRID DE BOTONES */
+/* GRID */
 .controls-grid{
 display:grid;
-grid-template-columns:40px 40px 40px;
-grid-template-rows:40px 40px 40px;
-gap:5px;
+grid-template-columns:50px 50px 50px;
+grid-template-rows:50px 50px 50px;
+gap:8px;
+justify-content:center;
 }
 
 /* BOTONES */
 .controls-grid button{
-font-size:16px;
+font-size:20px;
 border:none;
-border-radius:8px;
+border-radius:10px;
 background:#222;
 color:white;
 }
