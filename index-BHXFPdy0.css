@@ -47,3 +47,17 @@ margin-bottom:120px;
 display:none;
 }
 }
+/* EVITAR ZOOM Y MOVIMIENTO EN MOVIL */
+html, body{
+margin:0;
+padding:0;
+touch-action:manipulation;
+overflow:hidden;
+}
+
+/* EVITAR ZOOM AL TOCAR BOTONES */
+button{
+touch-action:manipulation;
+user-select:none;
+-webkit-user-select:none;
+}
