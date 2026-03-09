@@ -6,15 +6,25 @@
   text-align:center;
 }
 
-.mobile-controls button{
-  font-size:28px;
-  padding:10px 15px;
-  margin:5px;
+.mobile-controls{
+position:relative;
+margin-top:20px;
+width:100%;
+text-align:center;
 }
 
-/* ocultar en computador */
-@media (min-width: 768px){
-  .mobile-controls{
-    display:none;
-  }
+.mobile-controls button{
+font-size:28px;
+padding:12px 18px;
+margin:6px;
+border-radius:10px;
+border:none;
+background:#222;
+color:white;
+}
+
+@media (min-width:768px){
+.mobile-controls{
+display:none;
+}
 }
