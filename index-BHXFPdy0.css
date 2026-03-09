@@ -8,13 +8,10 @@ align-items:center;
 
 /* CONTROLES MOVIL */
 .mobile-controls{
-position:fixed;
-bottom:10px;
-left:0;
-width:100%;
+margin-top:10px;
 display:flex;
 justify-content:center;
-z-index:1000;
+width:100%;
 }
 
 /* GRID DE BOTONES */
@@ -39,10 +36,10 @@ user-select:none;
 -webkit-user-select:none;
 }
 
-/* ESPACIO PARA QUE EL JUEGO NO TAPE LOS BOTONES */
+/* CANVAS DEL JUEGO */
 canvas{
-margin-bottom:120px;
 touch-action:none;
+margin-bottom:10px;
 }
 
 /* OCULTAR BOTONES EN COMPUTADOR */
