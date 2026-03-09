@@ -6,6 +6,13 @@
   text-align:center;
 }
 
+.mobile-controls{
+  position:fixed;
+  bottom:20px;
+  width:100%;
+  text-align:center;
+}
+
 .mobile-controls button{
   font-size:28px;
   padding:10px 15px;
