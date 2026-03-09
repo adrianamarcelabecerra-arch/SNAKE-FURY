@@ -6,53 +6,20 @@ flex-direction:column;
 align-items:center;
 }
 
-/* CONTROLES MOVIL */
-.mobile-controls{
-margin-top:10px;
-display:flex;
-justify-content:center;
-width:100%;
-}
-
-/* GRID DE BOTONES */
-.controls-grid{
-display:grid;
-grid-template-columns:60px 60px 60px;
-grid-template-rows:60px 60px 60px;
-gap:8px;
-}
-
-/* BOTONES */
-.controls-grid button{
-width:60px;
-height:60px;
-font-size:24px;
-border:none;
-border-radius:12px;
-background:#222;
-color:white;
-touch-action:none;
-user-select:none;
--webkit-user-select:none;
-}
-
 /* CANVAS DEL JUEGO */
 canvas{
 touch-action:none;
-margin-bottom:10px;
 }
 
-/* OCULTAR BOTONES EN COMPUTADOR */
-@media (min-width:768px){
-.mobile-controls{
-display:none;
-}
-}
-
-/* BLOQUEAR ZOOM Y SCROLL */
+/* EVITAR ZOOM Y SCROLL EN MOVIL */
 html, body{
 margin:0;
 padding:0;
 touch-action:none;
 overscroll-behavior:none;
+}
+
+/* QUITAR RESALTADO AL TOCAR */
+*{
+-webkit-tap-highlight-color: transparent;
 }
