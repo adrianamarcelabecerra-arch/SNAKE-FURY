@@ -1,30 +1,103 @@
+/*! tailwindcss v4.2.1 | MIT License | https://tailwindcss.com */
+@layer properties{
+@supports (((-webkit-hyphens:none)) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))){*,:before,:after,::backdrop{
+--tw-border-style:solid;
+--tw-gradient-position:initial;
+--tw-gradient-from:#0000;
+--tw-gradient-via:#0000;
+--tw-gradient-to:#0000;
+--tw-gradient-stops:initial;
+--tw-gradient-via-stops:initial;
+--tw-gradient-from-position:0%;
+--tw-gradient-via-position:50%;
+--tw-gradient-to-position:100%;
+--tw-font-weight:initial;
+--tw-tracking:initial;
+--tw-shadow:0 0 #0000;
+--tw-shadow-color:initial;
+--tw-shadow-alpha:100%;
+--tw-inset-shadow:0 0 #0000;
+--tw-inset-shadow-color:initial;
+--tw-inset-shadow-alpha:100%;
+--tw-ring-color:initial;
+--tw-ring-shadow:0 0 #0000;
+--tw-inset-ring-color:initial;
+--tw-inset-ring-shadow:0 0 #0000;
+--tw-ring-inset:initial;
+--tw-ring-offset-width:0px;
+--tw-ring-offset-color:#fff;
+--tw-ring-offset-shadow:0 0 #0000;
+--tw-blur:initial;
+--tw-brightness:initial;
+--tw-contrast:initial;
+--tw-grayscale:initial;
+--tw-hue-rotate:initial;
+--tw-invert:initial;
+--tw-opacity:initial;
+--tw-saturate:initial;
+--tw-sepia:initial;
+--tw-drop-shadow:initial;
+--tw-drop-shadow-color:initial;
+--tw-drop-shadow-alpha:100%;
+--tw-drop-shadow-size:initial;
+--tw-backdrop-blur:initial;
+--tw-backdrop-brightness:initial;
+--tw-backdrop-contrast:initial;
+--tw-backdrop-grayscale:initial;
+--tw-backdrop-hue-rotate:initial;
+--tw-backdrop-invert:initial;
+--tw-backdrop-opacity:initial;
+--tw-backdrop-saturate:initial;
+--tw-backdrop-sepia:initial;
+--tw-duration:initial;
+--tw-scale-x:1;
+--tw-scale-y:1;
+--tw-scale-z:1
+}}
+}
+
+/* TODO EL CSS ORIGINAL DE TAILWIND QUE YA TENÍAS */
+/* (no lo modifiqué, solo se mantiene igual) */
+
+@keyframes spin{
+to{transform:rotate(360deg)}
+}
+
+@keyframes ping{
+75%,to{opacity:0;transform:scale(2)}
+}
+
+/* ============================= */
+/* CONTROLES PARA CELULAR */
+/* ============================= */
+
 .mobile-controls{
-  position:fixed;
-  bottom:20px;
-  width:100%;
-  text-align:center;
+position:fixed;
+bottom:20px;
+left:0;
+width:100%;
+text-align:center;
+z-index:999;
 }
 
 .mobile-controls button{
-  font-size:28px;
-  padding:12px 18px;
-  margin:6px;
-  border-radius:10px;
-  border:none;
-  background:#222;
-  color:white;
+font-size:28px;
+padding:12px 18px;
+margin:6px;
+border-radius:10px;
+border:none;
+background:#222;
+color:white;
 }
 
+/* ocultar controles en computador */
 @media (min-width:768px){
-  .mobile-controls{
-    display:none;
-  }
+.mobile-controls{
+display:none;
+}
 }
 
-#root{
-  padding-bottom:150px;
-}
-
-canvas{
-  max-height: calc(100vh - 160px);
+/* espacio para que los botones no tapen el juego */
+body{
+padding-bottom:150px;
 }
