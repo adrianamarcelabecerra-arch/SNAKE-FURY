@@ -13,16 +13,32 @@ width:100%;
 text-align:center;
 }
 
+.mobile-controls{
+position:fixed;
+bottom:10px;
+left:0;
+width:100%;
+display:flex;
+justify-content:center;
+gap:10px;
+z-index:1000;
+}
+
 .mobile-controls button{
-font-size:28px;
-padding:12px 18px;
-margin:6px;
+font-size:26px;
+padding:12px 16px;
 border-radius:10px;
 border:none;
 background:#222;
 color:white;
 }
 
+/* espacio para que el juego no quede debajo de botones */
+body{
+padding-bottom:120px;
+}
+
+/* ocultar en computador */
 @media (min-width:768px){
 .mobile-controls{
 display:none;
